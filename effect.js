@@ -29,7 +29,7 @@ $('document').ready(function(){
 		});
 	});
 	$('#play').click(function(){
-		var audio = $('.song')[0];
+		var audio = $('.birthdaysong')[0];
         audio.play();
         $('#bulb_yellow').addClass('bulb-glow-yellow-after');
 		$('#bulb_red').addClass('bulb-glow-red-after');
@@ -165,6 +165,10 @@ $('document').ready(function(){
 	});
 	
 	$('#story').click(function(){
+		var oldaudio = $('.birthdaysong')[0];
+        oldaudio.pause();
+		var audio = $('.lovesong')[0];
+        audio.play();
 		$(this).fadeOut('slow');
 		$('.cake').fadeOut('fast').promise().done(function(){
 			$('.message').fadeIn('slow');

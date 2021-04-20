@@ -4,11 +4,11 @@
   "description": "Birthday greetings..",
   "main": " ",
   "scripts": {
-    "server-node": "http-server -p 8081"
+    "server-node": "http-server -p 3000"
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/ayusharma/birthday.git"
+    "url": "git+https://github.com/ThiruManoj/babe-birthday.git"
   },
   "keywords": [
     "Birthday"
