@@ -4,6 +4,31 @@ $(window).load(function(){
 });
 $('document').ready(function(){
 		var vw;
+
+		var myRightIndex = 0;
+		var myLeftIndex = 0;
+		carousel();
+
+		function carousel() {
+			var i,j;
+			var x = document.getElementsByClassName("mySlides");
+			var y = document.getElementsByClassName("mySlides1");
+			for (i = 0; i < x.length; i++) {
+				x[i].style.display = "none";  
+			}
+			for (j = 0; j < y.length; j++) {
+				y[j].style.display = "none";  
+			}
+			myRightIndex++;
+			myLeftIndex++;
+			if (myRightIndex > x.length) {myRightIndex = 1}    
+			if (myLeftIndex > y.length) {myLeftIndex = 1}    
+			x[myRightIndex-1].style.display = "block";  
+			y[myLeftIndex-1].style.display = "block";  
+			setTimeout(carousel, 2500);    
+		}
+
+
 		$(window).resize(function(){
 			 vw = $(window).width()/2;
 			$('#b1,#b2,#b3,#b4,#b5,#b6,#b7').stop();

@@ -118,6 +118,29 @@
   }
 }
 
+.rightSlidesContainer{
+  top:18%;
+  left:75%;
+  position:absolute;
+}
+
+.leftSlidesContainer{
+  top:5%;
+  right:75%;
+  position:absolute;
+}
+
+.w3-animate-fading{animation:fading 10s infinite}@keyframes fading{0%{opacity:0}50%{opacity:1}100%{opacity:0}}
+.w3-animate-opacity{animation:opac 0.8s}@keyframes opac{from{opacity:0} to{opacity:1}}
+.w3-animate-top{position:relative;animation:animatetop 2s}@keyframes animatetop{from{top:-300px;opacity:0} to{top:0;opacity:1}}
+.w3-animate-left{position:relative;animation:animateleft 2s}@keyframes animateleft{from{left:-300px;opacity:0} to{left:0;opacity:1}}
+.w3-animate-right{position:relative;animation:animateright 2s}@keyframes animateright{from{right:-300px;opacity:0} to{right:0;opacity:1}}
+.w3-animate-bottom{position:relative;animation:animatebottom 2s}@keyframes animatebottom{from{bottom:-300px;opacity:0} to{bottom:0;opacity:1}}
+.w3-animate-zoom {animation:animatezoom 0.6s}@keyframes animatezoom{from{transform:scale(0)} to{transform:scale(1)}}
+.w3-animate-input{transition:width 0.4s ease-in-out}.w3-animate-input:focus{width:100%!important}
+.w3-opacity,.w3-hover-opacity:hover{opacity:0.60}.w3-opacity-off,.w3-hover-opacity-off:hover{opacity:1}
+.w3-opacity-max{opacity:0.25}.w3-opacity-min{opacity:0.75}
+
 .viewport1{
   top:50%;
   left:85%;
@@ -151,9 +174,16 @@
   animation: swipe 20s ease-in-out 2s infinite ;
 }
 
+.mySlides {
+  display:none;
+}
+.mySlides1 {
+  display:none;
+}
+
 .carouselImg{
   height:auto;
-  width:100%;
+  max-width:100%;
 }
 
 @keyframes swipe {
@@ -189,23 +219,6 @@
   
   95% {left:-5000px;}
   99% {left:-5000px;}
-  
-  100%{left:0px;}
-  
-}
-
-@-webkit-keyframes swipe {
-  0% {left:0px;}
-  20% {left:0px;}
-  
-  25% {left:-300px;}
-  45% {left:-300px;}
-  
-  50% {left:-600px;}
-  70% {left:-600px;}
-  
-  75% {left:-900px;}
-  95% {left:-900px;}
   
   100%{left:0px;}
   
