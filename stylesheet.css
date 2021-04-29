@@ -974,13 +974,32 @@ audio {
 
 .bannar {
 	max-width: 100%;
-	-webkit-transform:translate(0px,-500px);
-	-moz-transform:translate(0px,-500px);
-	-o-transform:translate(0px,-500px);
-	-ms-transform:translate(0px,-500px);
-	transform:translate(0px,-500px);
+	-webkit-transform:translate(0px,-700px);
+	-moz-transform:translate(0px,-700px);
+	-o-transform:translate(0px,-700px);
+	-ms-transform:translate(0px,-700px);
+	transform:translate(0px,-700px);
 
 }
+
+
+.bannar1 {
+	max-width: 100%;
+	position: fixed;
+	top:100%;
+	left:0%;
+	opacity: 0.5;
+	z-index: 9999;
+}
+.bannar2 {
+	max-width: 100%;
+	position: fixed;
+	top:100%;
+	right:0%;
+	opacity: 0.5;
+	z-index: 9999;
+}
+
 .bannar-come {
 	-webkit-animation: bannar_come linear 6s;
 	-webkit-transform:translate(0px,0px);

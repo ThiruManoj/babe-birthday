@@ -45,6 +45,8 @@ $('document').ready(function(){
 	});
 
 	$('#bannar_coming').click(function(){
+		$('.bannar1').animate({top:-5},800);
+		$('.bannar2').animate({top:-5},800);
 		$('.bannar').addClass('bannar-come');
 		$(this).fadeOut('slow').delay(6000).promise().done(function(){
 			$('#balloons_flying').fadeIn('slow');
@@ -166,6 +168,7 @@ $('document').ready(function(){
 	});
 	
 	$('#story').click(function(){
+		$('.balloon-border').animate({top:-500},8000);
 		var oldaudio = $('.birthdaysong')[0];
         oldaudio.pause();
 		var audio = $('.lovesong')[0];
