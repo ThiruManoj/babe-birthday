@@ -968,6 +968,10 @@ audio {
 	display: none;
 }
 
+.navbar-fixed-bottom{
+	bottom: 50px !important
+}
+
 .bannar {
 	max-width: 100%;
 	-webkit-transform:translate(0px,-500px);
@@ -1085,13 +1089,16 @@ audio {
 	background-repeat: no-repeat no-repeat;
 	background-size: 100px 183px;
 }
-.balloons h2 {
+.balloons p {
 	text-transform: uppercase;
 	font-family: 'Signika', sans-serif;
-	font-size: 50px;
+	font-size: 20px;
 	color: #BF4136;
 	text-shadow: 5px 5px 5px #FFF;
 	display: none;
+	position: relative;
+	top: 20%;
+	left: -5%;
 }
 #b1,#b11 {
 	background-image: url('b1.png');
@@ -1308,3 +1315,5 @@ audio {
     		-webkit-transform: scale(0.9);
     	}
     }*/
+
+	

@@ -117,3 +117,96 @@
     transform: rotate(360deg);
   }
 }
+
+.viewport1{
+  top:50%;
+  left:85%;
+  transform: translate(-50%,-50%);
+  position:absolute;
+  width:500px;
+  height:auto;
+  overflow:hidden;
+}
+.viewport2{
+  top:50%;
+  left:15%;
+  transform: translate(-50%,-50%);
+  position:absolute;
+  width:500px;
+  height:auto;
+  overflow:hidden;
+}
+.square {
+  background-color:black;
+  height:auto;
+  width:500px;
+  float: left;
+}
+
+.carouselImages{
+  height:auto;
+  width:5000px;
+  overflow:hidden;
+  position:relative;
+  animation: swipe 20s ease-in-out 2s infinite ;
+}
+
+.carouselImg{
+  height:auto;
+  width:100%;
+}
+
+@keyframes swipe {
+  0% {left:0px;}
+  05% {left:0px;}
+  
+  10% {left:-500px;}
+  15% {left:-500px;}
+
+  20% {left:-1000px;}
+  25% {left:-1000px;}
+
+  30% {left:-1500px;}
+  35% {left:-1500px;}
+
+  40% {left:-2000px;}
+  45% {left:-2000px;}
+
+  50% {left:-2500px;}
+  55% {left:-2500px;}
+
+  60% {left:-3000px;}
+  65% {left:-3000px;}
+
+  70% {left:-3500px;}
+  75% {left:-3500px;}
+
+  80% {left:-4000px;}
+  85% {left:-4000px;}
+  
+  90% {left:-4500px;}
+  95% {left:-4500px;}
+  
+  95% {left:-5000px;}
+  99% {left:-5000px;}
+  
+  100%{left:0px;}
+  
+}
+
+@-webkit-keyframes swipe {
+  0% {left:0px;}
+  20% {left:0px;}
+  
+  25% {left:-300px;}
+  45% {left:-300px;}
+  
+  50% {left:-600px;}
+  70% {left:-600px;}
+  
+  75% {left:-900px;}
+  95% {left:-900px;}
+  
+  100%{left:0px;}
+  
+}
